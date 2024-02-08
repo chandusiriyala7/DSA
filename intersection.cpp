@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector <int> insertion(vector <int> nums,int n,int val)
+vector <int> remove_value(vector <int> nums,int n,int val)
 {
     int index = 0;
     for(int i = 0; i < n;i++)
@@ -26,7 +26,7 @@ int main()
         cin >> temp;
         nums.push_back(temp);
     }
-    vector <int> ans = insertion(nums,n,val);
+    vector <int> ans = remove_value(nums,n,val);
     for(auto k : ans)cout << k << " ";
     return 0;
 }
